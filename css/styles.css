@@ -10,6 +10,7 @@
 @import "components/badge.css";
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
 
 /* Screens */
 @import "screens/login.css";
@@ -18,11 +19,23 @@
 @import "screens/more.css";
 @import "screens/settings.css";
 @import "screens/chat.css";
+@import "screens/music-list.css";
+@import "screens/music-play.css";
 
 body {
   font-family: "Open Sans", sans-serif;
   color: #2e363e;
+  box-sizing: border-box;
 }
 .main-screen {
-  padding: 0px var(--horizontal-space);
+  padding: 20px var(--horizontal-space);
+}
+.music {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  padding: var(--horizontal-space);
+  box-sizing: border-box;
 }

@@ -1,6 +1,6 @@
 .user-component {
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .user-component,
@@ -18,12 +18,12 @@
 
 .user-component__title {
   font-weight: 600;
-  font-size: 23px;
+  font-size: 26px;
 }
 
 .user-component__subtitle {
   font-size: 18px;
-  margin-top: 8px;
+  margin-top: 10px;
   color: rgba(0, 0, 0, 0.5);
 }
 

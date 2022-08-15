@@ -25,13 +25,13 @@
   align-items: center;
 }
 .chat__timestamp {
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
   color: white;
   opacity: 0.9;
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 8px 15px;
-  border-radius: 15px;
+  padding: 10px 18px;
+  border-radius: 18px;
   margin-bottom: 25px;
 }
 
@@ -53,10 +53,10 @@
   display: block;
 }
 .message__bubble {
-  font-size: 18px;
+  font-size: 20px;
   background-color: white;
-  padding: 11px 14px;
-  border-radius: 15px;
+  padding: 12px 15px;
+  border-radius: 20px;
   border-top-left-radius: 0;
 }
 .message__info {
@@ -73,7 +73,7 @@
 }
 .message-row--own .message__bubble {
   background-color: var(--yellow);
-  border-radius: 15px;
+  border-radius: 20px;
   border-top-right-radius: 0;
 }
 .message-row--own .message__info {
@@ -87,7 +87,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 20px;
+  padding: 10px 20px;
   box-sizing: border-box;
 }
 .reply .reply__column:first-child {
@@ -101,29 +101,29 @@
   opacity: 0.6;
 }
 .reply input {
-  height: 40px;
+  height: 50px;
   width: 100%;
   border: var(--main-border);
-  border-radius: 20px;
+  border-radius: 25px;
   box-sizing: border-box;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 .reply__column:last-child button,
 .reply__column:last-child > i {
   position: absolute;
-  right: 5px;
-  top: 6px;
+  right: 12px;
+  top: 9px;
 }
 .reply__column:last-child > i {
-  font-size: 25px;
-  top: 8px;
-  right: 43px;
+  font-size: 32px;
+  top: 10px;
+  right: 55px;
 }
 .reply__column button {
   background-color: var(--yellow);
   border: none;
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
 }
 .reply__column button i {

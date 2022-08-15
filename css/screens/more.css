@@ -1,5 +1,5 @@
 .more-suggestions {
-  margin-top: 50px;
+  margin-top: 40px;
   border-top: var(--main-border);
   padding-top: 40px;
 }
@@ -32,6 +32,6 @@
   color: white;
 }
 .more-suggestions__icon-text {
-  font-size: 15px;
+  font-size: 16px;
   opacity: 0.7;
 }

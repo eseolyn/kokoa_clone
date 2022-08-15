@@ -2,14 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 55px var(--horizontal-space) 30px;
+  padding: 70px var(--horizontal-space) 30px;
 }
 .alt-header__column {
   width: 33%;
 }
 
 .alt-header__title {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 600;
 }
 

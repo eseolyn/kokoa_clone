@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 55px var(--horizontal-space) 30px;
+  padding: 70px var(--horizontal-space) 30px;
 }
 
 .screen-header__title {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 600;
 }
 

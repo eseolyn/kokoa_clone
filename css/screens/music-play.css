@@ -1,0 +1,121 @@
+.play-screen__cover img {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: var(--img-shadow);
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+.play-screen__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+.play-screen__title span:first-child {
+  font-size: 50px;
+  font-weight: 600;
+  color: #2e363e;
+}
+.play-screen__title span:last-child {
+  font-size: 22px;
+  color: #2e363e;
+  opacity: 0.5;
+}
+.play-screen__bar {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 10px;
+}
+.play-screen__bar__time {
+  display: flex;
+  justify-content: space-between;
+}
+.play-screen__bar__time span {
+  font-size: 16px;
+  color: #2e363e;
+  opacity: 0.5;
+}
+.play-screen__bar__progr {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.bar__progr__total-time {
+  background-color: rgba(30, 32, 59, 0.3);
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+}
+.bar__progr__runtime {
+  background-color: #2e363e;
+  width: 63%;
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+}
+.bar__progr__dot {
+  background-color: #2e363e;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  right: 37%;
+}
+.play-screen__player {
+  position: relative;
+  display: flex;
+  width: 90%;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.play-screen__player__main-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70%;
+}
+.play-screen__player__main-btn button {
+  border: none;
+  background-color: white;
+  font-size: 35px;
+  width: 33%;
+}
+.play-screen__player__main-btn button:nth-child(2) {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  justify-content: space-evenly;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #2e363e;
+  color: var(--main-white);
+  box-shadow: 0px 0px 5px 4px rgba(170, 171, 211, 0.5);
+  z-index: 1;
+}
+.play-screen__player__main-btn button:nth-child(2):active {
+  box-shadow: none;
+}
+.play-screen__player__sub-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}
+.play-screen__player__sub-btn button {
+  border: none;
+  background-color: white;
+  color: #2e363e;
+  opacity: 0.5;
+}
