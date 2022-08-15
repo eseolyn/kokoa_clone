@@ -94,7 +94,6 @@
 .play-list__list__song__info div {
   display: flex;
   flex-direction: column;
-  align-items: center;
   height: 70px;
   justify-content: space-evenly;
 }
