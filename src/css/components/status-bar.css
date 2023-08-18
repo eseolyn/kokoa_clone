@@ -1,28 +1,54 @@
 .status-bar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  padding: 5px 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    place-items: center center;
+    padding: 5px 5px;
+    font-weight: 400;
+    text-align: center;
 }
 .status-bar__column {
-  width: 33%;
-}
-.status-bar__column:first-child span {
-  margin-right: 5px;
-}
-.status-bar__column:nth-child(2) {
-  display: flex;
-  justify-content: center;
-}
-.status-bar__column:last-child {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+    width: 100%;
 }
 
-.status-bar__column .fa-battery-full {
-  margin: 0px 5px;
+.status-bar__column:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    font-size: 10px;
+    gap: 8px;
+}
+
+.status-bar__column:last-child span {
+    position: absolute;
+    width: 18px;
+    right: 13px;
+    top: 13px;
+}
+#bolt {
+    position: absolute;
+    height: 10px;
+    width: auto;
+    right: 4px;
+    top: 13px;
+}
+#battery-empty {
+    padding-bottom: 3px;
+    height: 34px;
+    width: auto;
+}
+
+#signal {
+    height: 18px;
+    width: auto;
+}
+#wifi {
+    height: 20px;
+    width: auto;
+    /* padding-right: 35px; */
 }
