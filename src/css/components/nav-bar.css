@@ -16,25 +16,24 @@
 .nav__link {
     color: #2e363e;
     position: relative;
+    font-size: 35px;
 }
 
 @keyframes notificationAnimation {
     0% {
-        transform: translateY(5px);
+        transform: translateY(3px);
     }
     50% {
-        transform: translateY(-5px);
+        transform: translateY(-3px);
     }
     100% {
-        transform: translateY(5px);
+        transform: translateY(3px);
     }
 }
 
 .nav__notification {
     position: absolute;
     left: 25px;
-    bottom: 20px;
+    bottom: 22px;
     animation: notificationAnimation 2s ease-in-out infinite;
 }
-
-/* nav bar */

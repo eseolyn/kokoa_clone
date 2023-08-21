@@ -7,8 +7,9 @@
     display: flex;
     place-items: center center;
     padding: 5px 5px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
+    cursor: default;
 }
 .status-bar__column {
     width: 100%;
@@ -28,27 +29,26 @@
     position: absolute;
     width: 18px;
     right: 13px;
-    top: 13px;
+    top: 12px;
+    font-weight: 500;
 }
 #bolt {
     position: absolute;
     height: 10px;
-    width: auto;
-    right: 4px;
-    top: 13px;
+    width: 10px;
+    right: 6px;
+    top: 12px;
 }
 #battery-empty {
-    padding-bottom: 3px;
     height: 34px;
-    width: auto;
+    width: 34px;
 }
 
-#signal {
+#cellular {
     height: 18px;
-    width: auto;
+    width: 18px;
 }
 #wifi {
     height: 20px;
-    width: auto;
-    /* padding-right: 35px; */
+    width: 20px;
 }

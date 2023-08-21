@@ -28,6 +28,8 @@ body {
     font-family: "Noto Sans", sans-serif;
     color: #2e363e;
     box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
 }
 .main-screen {
     padding: 20px var(--horizontal-space);
