@@ -6,7 +6,7 @@
     box-sizing: border-box;
     display: flex;
     place-items: center center;
-    padding: 5px 5px;
+    padding: 0 5px;
     font-weight: 500;
     text-align: center;
     cursor: default;
@@ -40,8 +40,8 @@
     top: 12px;
 }
 #battery-empty {
-    height: 34px;
-    width: 34px;
+    height: 35px;
+    width: 35px;
 }
 
 #cellular {

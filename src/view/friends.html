@@ -29,7 +29,10 @@
             <div class="screen-header__icons">
                 <span><ion-icon name="search-outline"></ion-icon></span>
                 <span><ion-icon name="person-add-outline"></ion-icon></span>
-                <span><ion-icon name="musical-notes-outline"></ion-icon></span>
+                <span
+                    ><a href="music-list.html"
+                        ><ion-icon name="musical-notes-outline"></ion-icon></a
+                ></span>
                 <span>
                     <a href="settings.html"
                         ><ion-icon name="cog-outline"></ion-icon
@@ -39,44 +42,46 @@
         </header>
 
         <main class="friends-screen">
-            <div class="user-component">
-                <div class="user-component__column">
+            <div class="user-component user-component__big">
+                <div class="user-component__column user-component__img">
                     <img
-                        src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/eunseolYun-avatar.jpg"
+                        src="https://avatars.githubusercontent.com/u/97269267?v=4"
                         class="user-component__avatar user-component__avatar--xl"
                     />
-                    <div class="user-component__text">
-                        <h4 class="user-component__title">nomad</h4>
-                        <!--<h6 class="user-component__subtitle">subtitle text...</h6>-->
-                    </div>
                 </div>
-                <div class="user-component__column">상태메세지 +</div>
+                <div class="user-component__column user-component__text">
+                    <h4 class="user-component__title">Eunseol</h4>
+                    <!-- <h6 class="user-component__subtitle">subtitle text...</h6> -->
+                </div>
+                <div class="user-component__column user-component__msg">
+                    상태메세지 +
+                </div>
             </div>
             <div class="friends-screen__channel">
                 <div class="friends-screen__channel-header">
                     <span>Channel</span>
                     <ion-icon name="chevron-up"></ion-icon>
                 </div>
-                <div class="user-component">
-                    <div class="user-component__column">
+                <div class="user-component user-component__small">
+                    <div class="user-component__column user-component__img">
                         <img
-                            src="https://avatars.githubusercontent.com/u/97269267?v=4"
+                            src="https://play-lh.googleusercontent.com/cf3DwPLbS8Z55sDvUSTQ6PL1goPdm8KbZ81g4TEUAaeUh5LDhkzdjxKQ2RX6BGpv0x4"
                             class="user-component__avatar user-component__avatar--sm"
                         />
-                        <div class="user-component__text">
-                            <h4
-                                class="user-component__title user-component__title--not-bold"
-                            >
-                                Channel
-                            </h4>
-                            <!--<h6 class="user-component__subtitle">subtitle text...</h6>-->
-                        </div>
                     </div>
-                    <div class="user-component__column">
-                        <div>
-                            <span>2</span>
-                            <ion-icon name="chevron-forward"></ion-icon>
-                        </div>
+                    <div class="user-component__column user-component__text">
+                        <h4
+                            class="user-component__title user-component__title--not-bold"
+                        >
+                            Channel
+                        </h4>
+                        <!--<h6 class="user-component__subtitle">subtitle text...</h6>-->
+                    </div>
+                    <div
+                        class="user-component__column user-component__msg user-channel-more"
+                    >
+                        <span>2</span>
+                        <ion-icon name="chevron-forward"></ion-icon>
                     </div>
                 </div>
             </div>
@@ -85,7 +90,62 @@
                     <span>Friends</span>
                     <ion-icon name="chevron-up"></ion-icon>
                 </div>
-                <div>유저컴포넌트 + 상태메세지, 프로필음악</div>
+                <div class="user-component user-component__small">
+                    <div class="user-component__column user-component__img">
+                        <img
+                            src="https://avatars.githubusercontent.com/u/97269267?v=4"
+                            class="user-component__avatar user-component__avatar--sm"
+                        />
+                    </div>
+                    <div class="user-component__column user-component__text">
+                        <h4 class="user-component__title">nomad</h4>
+                        <h6 class="user-component__subtitle">
+                            subtitle text...
+                        </h6>
+                    </div>
+                </div>
+                <div class="user-component user-component__small">
+                    <div class="user-component__column user-component__img">
+                        <img
+                            src="https://avatars.githubusercontent.com/u/97269267?v=4"
+                            class="user-component__avatar user-component__avatar--sm"
+                        />
+                    </div>
+                    <div class="user-component__column user-component__text">
+                        <h4 class="user-component__title">누구세요</h4>
+                        <!-- <h6 class="user-component__subtitle">subtitle text...</h6> -->
+                    </div>
+                    <div
+                        class="user-component__column user-component__msg user-component__music"
+                    >
+                        <div>Believer - Imagine Dragons</div>
+                        <div>
+                            <ion-icon name="play-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-component user-component__small">
+                    <div class="user-component__column user-component__img">
+                        <img
+                            src="https://avatars.githubusercontent.com/u/97269267?v=4"
+                            class="user-component__avatar user-component__avatar--sm"
+                        />
+                    </div>
+                    <div class="user-component__column user-component__text">
+                        <h4 class="user-component__title">홍길동</h4>
+                        <h6 class="user-component__subtitle">
+                            동해번쩍 서해번쩍 💫
+                        </h6>
+                    </div>
+                    <div
+                        class="user-component__column user-component__msg user-component__music"
+                    >
+                        <div>2002 - Anne-Marie</div>
+                        <div>
+                            <ion-icon name="play-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
 

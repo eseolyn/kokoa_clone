@@ -1,55 +1,104 @@
 .user-component {
-  justify-content: space-between;
-  margin-bottom: 40px;
+    display: grid;
+    /* justify-content: space-between; */
+    margin-bottom: 30px;
+    position: relative;
+    align-items: center;
 }
 
-.user-component,
+.user-component__big {
+    grid-template-columns: 90px auto;
+}
+
+.user-component__small {
+    grid-template-columns: 70px auto;
+}
+
+.user-component__column {
+    align-items: center;
+}
+
+/* .user-component,
 .user-component__column:first-child {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+} */
+.user-component__img {
+    justify-items: center;
+    margin-right: 20px;
 }
 
-.user-component__avatar {
-  width: 70px;
-  height: 70px;
-  border-radius: 30px;
-  margin-right: 20px;
-}
-
-.user-component__title {
-  font-weight: 600;
-  font-size: 26px;
-}
-
-.user-component__subtitle {
-  font-size: 18px;
-  margin-top: 10px;
-  color: rgba(0, 0, 0, 0.5);
-}
+/* .user-component__avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+} */
 
 .user-component__avatar--xl {
-  width: 80px;
-  height: 80px;
+    width: 70px;
+    height: 70px;
+    border-radius: 40%;
 }
 
 .user-component__avatar--sm {
-  width: 60px;
-  height: 60px;
-  border-radius: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+}
+
+.user-component__title {
+    font-weight: 400;
+    font-size: 25px;
+}
+.user-component__small .user-component__title {
+    font-size: 22px;
+}
+
+.user-component__subtitle {
+    font-size: 15px;
+    margin-top: 8px;
+    color: var(--main-gray);
 }
 
 .user-component__title--not-bold {
-  font-weight: 400;
+    font-weight: 400;
 }
 
-.user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.6);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+.user-component__msg {
+    position: absolute;
+    right: 0;
+    padding: 6px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    height: 16px;
+}
+
+.user-component__column:nth-child(3) {
+    color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.user-channel-more {
+    border: none;
+    gap: 2px;
+}
+
+.user-component__music {
+    border-color: var(--green);
+    gap: 2px;
+}
+
+.user-component__music > div:nth-child(2) {
+    color: var(--green);
+    font-size: 20px;
+    height: 18px;
 }
 
 .user-component__time {
-  margin-bottom: 10px;
-  display: block;
+    margin-bottom: 10px;
+    display: block;
 }

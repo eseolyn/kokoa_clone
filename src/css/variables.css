@@ -1,14 +1,14 @@
 :root {
     --yellow: #fee500;
-    --black: #000000;
-    /* black #000000, 90% */
     --label: #191919;
     --brown: #3f3035;
     --ginger: #c5ab6a;
     --rose: #9f7b85;
+    --green: rgba(58, 227, 116, 0.6);
     --horizontal-space: 16px;
     --main-border: 1px solid rgba(0, 0, 0, 0.2);
-    --main-gray: rgba(0, 0, 0, 0.3);
+    /* --main-gray: rgba(0, 0, 0, 0.4); */
+    --main-gray: #999b99;
     --main-white: rgb(248, 250, 255);
     --img-shadow: 0px 7px 10px 3px rgba(170, 171, 211, 0.5);
 }
