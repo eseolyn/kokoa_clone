@@ -1,17 +1,23 @@
 .settings__setting {
-  padding: 20px 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  font-size: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
-.settings__setting i {
-  margin-right: 20px;
-  font-size: 22px;
-  opacity: 0.95;
+.settings__setting ion-icon {
+    margin-right: 15px;
+    font-size: 28px;
+    opacity: 0.95;
 }
-.settings__setting-column:last-child {
-  font-size: 18px;
-  opacity: 0.6;
+.settings__setting-column:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.settings__setting-column:last-child:not(.new-badge) {
+    font-size: 18px;
+    opacity: 0.6;
 }

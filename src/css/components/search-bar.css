@@ -1,0 +1,35 @@
+.search-bar {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background: #f2f2f2;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.search-bar__column {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar__column:first-child {
+    width: 10%;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.search-bar__column:last-child {
+    width: 90%;
+}
+.search-bar__column:last-child > input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 18px;
+    caret-color: var(--yellow);
+}
+.search-bar__column:last-child > input::placeholder {
+    font-size: 18px;
+}
+/* input font-weight doesn't work */

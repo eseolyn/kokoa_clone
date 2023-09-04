@@ -1,4 +1,4 @@
-#friends-display-link {
+/* #friends-display-link {
     text-align: center;
     display: block;
     background-color: #fafafa;
@@ -11,10 +11,10 @@
 
 #friends-display-link i {
     color: var(--main-gray);
-}
+} */
 
 .friends-screen {
-    padding: 0px var(--horizontal-space);
+    padding: 20px var(--horizontal-space);
 }
 
 .friends-screen__channel {

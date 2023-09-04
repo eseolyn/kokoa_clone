@@ -13,6 +13,8 @@
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
 @import "components/no-mobile.css";
+@import "components/search-bar.css";
+@import "components/keyword.css";
 
 /* Screens */
 @import "screens/login.css";
@@ -32,7 +34,7 @@ body {
     height: 100vh;
 }
 .main-screen {
-    padding: 20px var(--horizontal-space);
+    padding: 20px var(--horizontal-space) 60px;
 }
 .music {
     display: flex;

@@ -1,4 +1,4 @@
-.recommended-friends {
+/* .recommended-friends {
   margin: 20px 0px;
   padding: 20px 0px;
   border-top: var(--main-border);
@@ -15,9 +15,9 @@
   font-size: 20px;
   text-align: center;
   color: var(--main-gray);
-}
+} */
 
-.open-chat__header {
+/* .open-chat__header {
   display: flex;
   justify-content: space-between;
   opacity: 0.7;
@@ -109,4 +109,4 @@
 .open-post__heart-count:hover i {
   will-change: transform;
   animation: heartBeat 1s linear infinite;
-}
+} */
