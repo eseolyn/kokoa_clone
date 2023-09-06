@@ -15,6 +15,8 @@
 @import "components/no-mobile.css";
 @import "components/search-bar.css";
 @import "components/keyword.css";
+@import "components/wallet.css";
+@import "components/weather.css";
 
 /* Screens */
 @import "screens/login.css";
@@ -28,14 +30,16 @@
 
 body {
     font-family: "Noto Sans", sans-serif;
-    color: #2e363e;
+    color: var(--label);
     box-sizing: border-box;
     width: 100vw;
     height: 100vh;
 }
+
 .main-screen {
-    padding: 20px var(--horizontal-space) 60px;
+    padding: 16px var(--horizontal-space) 60px;
 }
+
 .music {
     display: flex;
     flex-direction: column;

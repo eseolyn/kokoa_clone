@@ -13,10 +13,6 @@
     color: var(--main-gray);
 } */
 
-.friends-screen {
-    padding: 20px var(--horizontal-space);
-}
-
 .friends-screen__channel {
     margin-top: 24px;
     border-top: var(--main-border);
