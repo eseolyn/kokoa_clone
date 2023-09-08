@@ -27,26 +27,31 @@
         <header class="alt-header">
             <div class="alt-header__column">
                 <a href="chats.html">
-                    <i class="fas fa-angle-left fa-lg"></i>
+                    <ion-icon name="chevron-back-outline"></ion-icon>
                 </a>
             </div>
             <div class="alt-header__column">
-                <h1 class="alt-header__title">sona</h1>
+                <span class="alt-header__title">sona</span>
             </div>
             <div class="alt-header__column">
-                <span><i class="fas fa-search fa-lg"></i></span>
-                <span><i class="fas fa-bars fa-lg"></i></span>
+                <span><ion-icon name="search-outline"></ion-icon></span>
+                <span><ion-icon name="menu-outline"></ion-icon></span>
             </div>
         </header>
 
         <main class="main-screen main-chat">
-            <div class="chat__timestamp">Wednesday, July 13, 2022</div>
+            <div class="chat__timestamp">
+                <ion-icon name="calendar-outline"></ion-icon
+                ><span> Wednesday, July 13, 2022</span
+                ><ion-icon name="chevron-forward-outline"></ion-icon>
+            </div>
 
             <div class="message-row message-row--own">
                 <div class="message-row__content">
                     <div class="message__info">
                         <span class="message__bubble"
-                            >Happy BirthDay!! ♡⁺◟(●˙▾˙●)◞⁺♡</span
+                            >Congratulations on get a job!
+                            <br />♡⁺◟(●˙▾˙●)◞⁺♡</span
                         >
                         <span class="message__time">21:27</span>
                     </div>
@@ -64,26 +69,34 @@
                     </div>
                 </div>
             </div>
+            <div class="message-row message-row--own">
+                <div class="message-row__content">
+                    <div class="message__info">
+                        <span class="message__bubble">here! It's yours</span>
+                        <span class="message__time">21:27</span>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <form class="reply">
             <div class="reply__column">
-                <i class="far fa-plus-square fa-xl"></i>
+                <ion-icon name="add-outline"></ion-icon>
             </div>
             <div class="reply__column">
                 <input type="text" placeholder="Write a message..." />
-                <i class="far fa-smile-wink"></i>
-                <button><i class="fas fa-arrow-up"></i></button>
+                <div class="reply__column__icons">
+                    <ion-icon name="happy-outline"></ion-icon>
+                    <button>
+                        <ion-icon name="arrow-up-outline"></ion-icon>
+                    </button>
+                </div>
             </div>
         </form>
 
         <div id="no-mobile">
             <span>Your screen is too big 😥</span>
         </div>
-        <script
-            src="https://kit.fontawesome.com/3c2ce20317.js"
-            crossorigin="anonymous"
-        ></script>
         <script
             type="module"
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
