@@ -9,27 +9,32 @@
     <body>
         <div class="status-bar">
             <div class="status-bar__column">
-                <span>No Service</span>
-                <i class="fas fa-wifi"></i>
-            </div>
-            <div class="status-bar__column">
                 <span>18:43</span>
             </div>
+            <div class="status-bar__column"></div>
             <div class="status-bar__column">
-                <span>110%</span>
-                <i class="fas fa-battery-full fa-lg"></i>
-                <i class="fas fa-bolt"></i>
+                <ion-icon id="cellular" name="cellular"></ion-icon>
+                <ion-icon id="wifi" name="wifi"></ion-icon>
+                <ion-icon
+                    id="battery-empty"
+                    name="battery-dead-outline"
+                ></ion-icon>
+                <span>100</span>
+                <ion-icon id="bolt" name="flash"></ion-icon>
             </div>
         </div>
+
         <header class="alt-header">
             <div class="alt-header__column">
-                <a href="more.html">
-                    <i class="fas fa-angle-left fa-lg"></i>
+                <!-- <a href="javascript:history.back()">Go Back</a> -->
+                <!-- history가 없는 경우 작동 안됨 -->
+                <a href="chats.html">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
                 </a>
             </div>
             <div class="alt-header__column"></div>
             <div class="alt-header__column">
-                <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+                <span><ion-icon name="search-outline"></ion-icon></span>
             </div>
         </header>
 
@@ -39,13 +44,19 @@
                     src="https://avatars.githubusercontent.com/u/97269267?v=4"
                 />
                 <div class="play-list__header__title">
-                    <span>artist</span>
-                    <span>genre</span>
+                    <span>Bass playlist</span>
                 </div>
             </div>
             <div class="play-list__btns">
-                <button>Shuffle</button>
-                <button><i class="fa-solid fa-heart fa-lg"></i> 212,971</button>
+                <button>
+                    <ion-icon name="duplicate-outline"></ion-icon>
+                </button>
+                <button>
+                    <ion-icon name="shuffle-outline"></ion-icon>
+                </button>
+                <button><ion-icon name="play-sharp"></ion-icon></button>
+                <button><ion-icon name="heart"></ion-icon></button>
+                <button><ion-icon name="arrow-redo-outline"></ion-icon></button>
             </div>
             <div class="play-list__list">
                 <div class="play-list__list__song">
@@ -54,11 +65,11 @@
                             src="https://images.unsplash.com/photo-1659355110966-42fe631ffb9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
                         />
                         <div>
-                            <span>artist</span>
                             <span>title</span>
+                            <span>artist</span>
                         </div>
                     </div>
-                    <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div><ion-icon name="ellipsis-vertical"></ion-icon></div>
                 </div>
                 <div class="play-list__list__song">
                     <a href="music-play.html">
@@ -66,14 +77,14 @@
                             <img
                                 src="https://images.unsplash.com/photo-1659440113076-3a50993fa64e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=945&q=80"
                             />
-                            <i class="fa-solid fa-chart-simple"></i>
+                            <ion-icon name="stats-chart"></ion-icon>
                             <div>
-                                <span>little tiger</span>
-                                <span>roar</span>
+                                <span>Roar</span>
+                                <span>Katy Perry</span>
                             </div>
                         </div>
                     </a>
-                    <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div><ion-icon name="ellipsis-vertical"></ion-icon></div>
                 </div>
                 <div class="play-list__list__song">
                     <div class="play-list__list__song__info">
@@ -81,11 +92,11 @@
                             src="https://images.unsplash.com/photo-1517868674985-0525518ae392?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                         />
                         <div>
-                            <span>artist</span>
                             <span>title</span>
+                            <span>artist</span>
                         </div>
                     </div>
-                    <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div><ion-icon name="ellipsis-vertical"></ion-icon></div>
                 </div>
                 <div class="play-list__list__song">
                     <div class="play-list__list__song__info">
@@ -93,11 +104,11 @@
                             src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
                         />
                         <div>
-                            <span>artist</span>
                             <span>title</span>
+                            <span>artist</span>
                         </div>
                     </div>
-                    <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div><ion-icon name="ellipsis-vertical"></ion-icon></div>
                 </div>
                 <div class="play-list__list__song">
                     <div class="play-list__list__song__info">
@@ -105,11 +116,11 @@
                             src="https://images.unsplash.com/photo-1659293627801-a08eb04d80f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
                         />
                         <div>
-                            <span>artist</span>
                             <span>title</span>
+                            <span>artist</span>
                         </div>
                     </div>
-                    <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div><ion-icon name="ellipsis-vertical"></ion-icon></div>
                 </div>
                 <div class="play-list__list__song">
                     <div class="play-list__list__song__info">
@@ -117,11 +128,11 @@
                             src="https://images.unsplash.com/photo-1659355110966-42fe631ffb9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
                         />
                         <div>
-                            <span>artist</span>
                             <span>title</span>
+                            <span>artist</span>
                         </div>
                     </div>
-                    <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div><ion-icon name="ellipsis-vertical"></ion-icon></div>
                 </div>
                 <div class="play-list__list__song">
                     <div class="play-list__list__song__info">
@@ -129,11 +140,11 @@
                             src="https://images.unsplash.com/photo-1517868674985-0525518ae392?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                         />
                         <div>
-                            <span>artist</span>
                             <span>title</span>
+                            <span>artist</span>
                         </div>
                     </div>
-                    <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div><ion-icon name="ellipsis-vertical"></ion-icon></div>
                 </div>
                 <div class="play-list__list__song">
                     <div class="play-list__list__song__info">
@@ -141,11 +152,11 @@
                             src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
                         />
                         <div>
-                            <span>artist</span>
                             <span>title</span>
+                            <span>artist</span>
                         </div>
                     </div>
-                    <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div><ion-icon name="ellipsis-vertical"></ion-icon></div>
                 </div>
                 <div class="play-list__list__song">
                     <div class="play-list__list__song__info">
@@ -153,11 +164,11 @@
                             src="https://images.unsplash.com/photo-1659293627801-a08eb04d80f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
                         />
                         <div>
-                            <span>artist</span>
                             <span>title</span>
+                            <span>artist</span>
                         </div>
                     </div>
-                    <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div><ion-icon name="ellipsis-vertical"></ion-icon></div>
                 </div>
                 <div class="play-list__list__song">
                     <div class="play-list__list__song__info">
@@ -165,22 +176,26 @@
                             src="https://images.unsplash.com/photo-1659355110966-42fe631ffb9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
                         />
                         <div>
-                            <span>artist</span>
                             <span>title</span>
+                            <span>artist</span>
                         </div>
                     </div>
-                    <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div><ion-icon name="ellipsis-vertical"></ion-icon></div>
                 </div>
             </div>
             <div class="play-list__player">
                 <div class="play-list__player__title">
-                    <span>artist</span>
-                    <span>title</span>
+                    <span>Roar</span>
+                    <span>Katy Perry</span>
                 </div>
                 <div class="play-list__player__btns">
-                    <button><i class="fa-solid fa-backward-step"></i></button>
-                    <button><i class="fa-solid fa-pause"></i></button>
-                    <button><i class="fa-solid fa-forward-step"></i></button>
+                    <button>
+                        <ion-icon name="play-skip-back-sharp"></ion-icon>
+                    </button>
+                    <button><ion-icon name="pause-sharp"></ion-icon></button>
+                    <button>
+                        <ion-icon name="play-skip-forward-sharp"></ion-icon>
+                    </button>
                 </div>
             </div>
         </main>
@@ -189,10 +204,6 @@
             <span>Your screen is too big 😥</span>
         </div>
 
-        <script
-            src="https://kit.fontawesome.com/3c2ce20317.js"
-            crossorigin="anonymous"
-        ></script>
         <script
             type="module"
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

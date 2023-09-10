@@ -9,28 +9,30 @@
     <body>
         <div class="status-bar">
             <div class="status-bar__column">
-                <span>No Service</span>
-                <i class="fas fa-wifi"></i>
-            </div>
-            <div class="status-bar__column">
                 <span>18:43</span>
             </div>
+            <div class="status-bar__column"></div>
             <div class="status-bar__column">
-                <span>110%</span>
-                <i class="fas fa-battery-full fa-lg"></i>
-                <i class="fas fa-bolt"></i>
+                <ion-icon id="cellular" name="cellular"></ion-icon>
+                <ion-icon id="wifi" name="wifi"></ion-icon>
+                <ion-icon
+                    id="battery-empty"
+                    name="battery-dead-outline"
+                ></ion-icon>
+                <span>100</span>
+                <ion-icon id="bolt" name="flash"></ion-icon>
             </div>
         </div>
 
         <header class="alt-header">
             <div class="alt-header__column">
                 <a href="music-list.html">
-                    <i class="fas fa-angle-left fa-lg"></i>
+                    <ion-icon name="chevron-back-outline"></ion-icon>
                 </a>
             </div>
             <div class="alt-header__column"></div>
             <div class="alt-header__column">
-                <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+                <span><ion-icon name="search-outline"></ion-icon></span>
             </div>
         </header>
 
@@ -41,29 +43,50 @@
                 />
             </div>
             <div class="play-screen__title">
-                <span>roar</span>
-                <span>little tiger</span>
+                <span>Roar</span>
+                <span>Katy Perry</span>
+            </div>
+            <div class="play-screen__btns">
+                <button>
+                    <ion-icon name="thumbs-up"></ion-icon>
+                    <span>520K</span
+                    ><ion-icon name="thumbs-down-outline"></ion-icon>
+                </button>
+                <button>
+                    <ion-icon name="chatbox-ellipses-outline"></ion-icon
+                    ><span>194</span>
+                </button>
+                <button>
+                    <ion-icon name="download-outline"></ion-icon>
+                </button>
+                <button><ion-icon name="arrow-redo-outline"></ion-icon></button>
             </div>
             <div class="play-screen__bar">
-                <div class="play-screen__bar__time">
-                    <span>1:24</span>
-                    <span>2:21</span>
-                </div>
                 <div class="play-screen__bar__progr">
                     <div class="bar__progr__total-time"></div>
                     <div class="bar__progr__runtime"></div>
                     <div class="bar__progr__dot"></div>
                 </div>
+                <div class="play-screen__bar__time">
+                    <span>2:19</span>
+                    <span>3:44</span>
+                </div>
             </div>
             <div class="play-screen__player">
                 <div class="play-screen__player__main-btn">
-                    <button><i class="fa-solid fa-backward-step"></i></button>
-                    <button><i class="fa-solid fa-play"></i></button>
-                    <button><i class="fa-solid fa-forward-step"></i></button>
+                    <button>
+                        <ion-icon name="play-skip-back-sharp"></ion-icon>
+                    </button>
+                    <button><ion-icon name="play-sharp"></ion-icon></button>
+                    <button>
+                        <ion-icon name="play-skip-forward-sharp"></ion-icon>
+                    </button>
                 </div>
                 <div class="play-screen__player__sub-btn">
-                    <button><i class="fa-solid fa-repeat"></i></button>
-                    <button><i class="fa-solid fa-shuffle"></i></button>
+                    <button><ion-icon name="repeat-outline"></ion-icon></button>
+                    <button>
+                        <ion-icon name="shuffle-outline"></ion-icon>
+                    </button>
                 </div>
             </div>
         </main>
@@ -71,10 +94,6 @@
         <div id="no-mobile">
             <span>Your screen is too big 😥</span>
         </div>
-        <script
-            src="https://kit.fontawesome.com/3c2ce20317.js"
-            crossorigin="anonymous"
-        ></script>
         <script
             type="module"
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
