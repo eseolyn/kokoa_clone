@@ -1,9 +1,9 @@
-/* .keyword-line {
+.keyword-line {
     display: flex;
     flex-direction: row;
     gap: 10px;
     margin-bottom: 30px;
-} */
+}
 
 .keyword {
     border: var(--main-border);
