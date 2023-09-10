@@ -27,14 +27,14 @@
         <header class="alt-header">
             <div class="alt-header__column">
                 <a href="more.html">
-                    <i class="fas fa-angle-left fa-lg"></i>
+                    <ion-icon name="chevron-back-outline"></ion-icon>
                 </a>
             </div>
             <div class="alt-header__column">
-                <h1 class="alt-header__title">Settings</h1>
+                <span class="alt-header__title">Settings</span>
             </div>
             <div class="alt-header__column">
-                <i class="fas fa-search fa-lg"></i>
+                <span><ion-icon name="search-outline"></ion-icon></span>
             </div>
         </header>
 
@@ -61,7 +61,7 @@
                     <div class="settings__setting">
                         <div class="settings__setting-column">
                             <ion-icon name="key-outline"></ion-icon>
-                            <span class="user-component__title"
+                            <span class="settings__setting-title"
                                 >코코아계정</span
                             >
                         </div>
@@ -74,7 +74,7 @@
                     <div class="settings__setting">
                         <div class="settings__setting-column">
                             <ion-icon name="notifications-outline"></ion-icon>
-                            <span class="user-component__title">알림</span>
+                            <span class="settings__setting-title">알림</span>
                         </div>
                         <div class="settings__setting-column"></div>
                     </div>
@@ -82,14 +82,14 @@
                 <li class="settings__setting">
                     <div class="settings__setting-column">
                         <ion-icon name="flask-outline"></ion-icon>
-                        <span>실험실</span>
+                        <span class="settings__setting-title">실험실</span>
                     </div>
                     <div class="settings__setting-column"></div>
                 </li>
                 <li class="settings__setting">
                     <div class="settings__setting-column">
                         <ion-icon name="megaphone-outline"></ion-icon>
-                        <span>공지사항</span>
+                        <span class="settings__setting-title">공지사항</span>
                         <div class="badge new-badge">N</div>
                     </div>
                     <div class="settings__setting-column"></div>
@@ -98,7 +98,9 @@
                     <div class="settings__setting">
                         <div class="settings__setting-column">
                             <ion-icon name="help-circle-outline"></ion-icon>
-                            <span class="user-component__title">고객센터</span>
+                            <span class="settings__setting-title"
+                                >고객센터</span
+                            >
                         </div>
                         <div class="settings__setting-column"></div>
                     </div>
@@ -110,7 +112,7 @@
                             <ion-icon
                                 name="information-circle-outline"
                             ></ion-icon>
-                            <span class="user-component__title">앱 관리</span>
+                            <span class="settings__setting-title">앱 관리</span>
                         </div>
                         <div class="settings__setting-column">10.3.2</div>
                     </div>
@@ -147,10 +149,6 @@
         <div id="no-mobile">
             <span>Your screen is too big 😥</span>
         </div>
-        <script
-            src="https://kit.fontawesome.com/3c2ce20317.js"
-            crossorigin="anonymous"
-        ></script>
         <script
             type="module"
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

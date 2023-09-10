@@ -15,6 +15,7 @@
 .settings__setting-column:first-child {
     display: flex;
     align-items: center;
+    font-size: 22px;
 }
 
 .settings__setting-column:last-child:not(.new-badge) {

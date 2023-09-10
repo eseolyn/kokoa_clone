@@ -1,7 +1,7 @@
 .user-component {
     display: grid;
     /* justify-content: space-between; */
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative;
     align-items: center;
 }
