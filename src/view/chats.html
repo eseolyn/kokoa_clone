@@ -7,26 +7,27 @@
         <title>Chats - Kokoa Clone</title>
     </head>
     <body>
-        <div class="status-bar">
-            <div class="status-bar__column">
-                <span>18:43</span>
+        <div id="display-screen">
+            <div class="status-bar">
+                <div class="status-bar__column">
+                    <span>18:43</span>
+                </div>
+                <div class="status-bar__column"></div>
+                <div class="status-bar__column">
+                    <ion-icon id="cellular" name="cellular"></ion-icon>
+                    <ion-icon id="wifi" name="wifi"></ion-icon>
+                    <ion-icon
+                        id="battery-empty"
+                        name="battery-dead-outline"
+                    ></ion-icon>
+                    <span>100</span>
+                    <ion-icon id="bolt" name="flash"></ion-icon>
+                </div>
             </div>
-            <div class="status-bar__column"></div>
-            <div class="status-bar__column">
-                <ion-icon id="cellular" name="cellular"></ion-icon>
-                <ion-icon id="wifi" name="wifi"></ion-icon>
-                <ion-icon
-                    id="battery-empty"
-                    name="battery-dead-outline"
-                ></ion-icon>
-                <span>100</span>
-                <ion-icon id="bolt" name="flash"></ion-icon>
-            </div>
-        </div>
 
-        <header class="screen-header">
-            <h1 class="screen-header__title">Chats</h1>
-            <!-- <div class="screen-header__icons">
+            <header class="screen-header">
+                <h1 class="screen-header__title">Chats</h1>
+                <!-- <div class="screen-header__icons">
                 <span><i class="fas fa-search fa-lg"></i></span>
                 <span><i class="far fa-comment-dots fa-lg"></i></span>
                 <span>
@@ -38,22 +39,47 @@
                     <a href="settings.html"><i class="fas fa-cog fa-lg"></i></a>
                 </span>
             </div> -->
-            <div class="screen-header__icons">
-                <span><ion-icon name="search-outline"></ion-icon></span>
-                <span
-                    ><a href="music-list.html"
-                        ><ion-icon name="musical-notes-outline"></ion-icon></a
-                ></span>
-                <span>
-                    <a href="settings.html"
-                        ><ion-icon name="settings-outline"></ion-icon
-                    ></a>
-                </span>
-            </div>
-        </header>
+                <div class="screen-header__icons">
+                    <span><ion-icon name="search-outline"></ion-icon></span>
+                    <span
+                        ><a href="music-list.html"
+                            ><ion-icon
+                                name="musical-notes-outline"
+                            ></ion-icon></a
+                    ></span>
+                    <span>
+                        <a href="settings.html"
+                            ><ion-icon name="settings-outline"></ion-icon
+                        ></a>
+                    </span>
+                </div>
+            </header>
 
-        <main class="main-screen">
-            <a href="chat.html">
+            <main class="main-screen">
+                <a href="chat.html">
+                    <div class="user-component user-component__small">
+                        <div class="user-component__column user-component__img">
+                            <img
+                                src="https://avatars.githubusercontent.com/u/97269267?v=4"
+                                class="user-component__avatar user-component__avatar--sm"
+                            />
+                        </div>
+                        <div
+                            class="user-component__column user-component__text"
+                        >
+                            <h4 class="user-component__title">sona</h4>
+                            <h6 class="user-component__subtitle">
+                                Thank you 😍
+                            </h6>
+                        </div>
+                        <div
+                            class="user-component__column user-component__time"
+                        >
+                            <div>21:22</div>
+                            <div class="badge">1</div>
+                        </div>
+                    </div>
+                </a>
                 <div class="user-component user-component__small">
                     <div class="user-component__column user-component__img">
                         <img
@@ -62,60 +88,45 @@
                         />
                     </div>
                     <div class="user-component__column user-component__text">
-                        <h4 class="user-component__title">sona</h4>
-                        <h6 class="user-component__subtitle">Thank you 😍</h6>
+                        <h4 class="user-component__title">nomad</h4>
+                        <h6 class="user-component__subtitle">
+                            chatting message preview
+                        </h6>
                     </div>
                     <div class="user-component__column user-component__time">
-                        <div>21:22</div>
-                        <div class="badge">1</div>
+                        <div>어제</div>
                     </div>
                 </div>
-            </a>
-            <div class="user-component user-component__small">
-                <div class="user-component__column user-component__img">
-                    <img
-                        src="https://avatars.githubusercontent.com/u/97269267?v=4"
-                        class="user-component__avatar user-component__avatar--sm"
-                    />
-                </div>
-                <div class="user-component__column user-component__text">
-                    <h4 class="user-component__title">nomad</h4>
-                    <h6 class="user-component__subtitle">
-                        chatting message preview
-                    </h6>
-                </div>
-                <div class="user-component__column user-component__time">
-                    <div>어제</div>
-                </div>
-            </div>
-        </main>
+            </main>
 
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__btn">
-                    <a class="nav__link" href="friends.html">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__link" href="chats.html">
-                        <span class="nav__notification badge">1</span>
-                        <ion-icon name="chatbubble"></ion-icon>
-                    </a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__link" href="open-chat.html"
-                        ><ion-icon name="chatbubbles-outline"></ion-icon
-                    ></a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__link" href="more.html">
-                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__btn">
+                        <a class="nav__link" href="friends.html">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="nav__btn">
+                        <a class="nav__link" href="chats.html">
+                            <span class="nav__notification badge">1</span>
+                            <ion-icon name="chatbubble"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="nav__btn">
+                        <a class="nav__link" href="open-chat.html"
+                            ><ion-icon name="chatbubbles-outline"></ion-icon
+                        ></a>
+                    </li>
+                    <li class="nav__btn">
+                        <a class="nav__link" href="more.html">
+                            <ion-icon
+                                name="ellipsis-horizontal-outline"
+                            ></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <div id="no-mobile">
             <span>Your screen is too big 😥</span>
         </div>

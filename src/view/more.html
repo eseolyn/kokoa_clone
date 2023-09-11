@@ -7,68 +7,71 @@
         <title>More - Kokoa Clone</title>
     </head>
     <body>
-        <div class="status-bar">
-            <div class="status-bar__column">
-                <span>18:43</span>
-            </div>
-            <div class="status-bar__column"></div>
-            <div class="status-bar__column">
-                <ion-icon id="cellular" name="cellular"></ion-icon>
-                <ion-icon id="wifi" name="wifi"></ion-icon>
-                <ion-icon
-                    id="battery-empty"
-                    name="battery-dead-outline"
-                ></ion-icon>
-                <span>100</span>
-                <ion-icon id="bolt" name="flash"></ion-icon>
-            </div>
-        </div>
-
-        <header class="screen-header">
-            <h1 class="screen-header__title">More</h1>
-            <div class="screen-header__icons">
-                <span><ion-icon name="search-outline"></ion-icon></span>
-                <span><ion-icon name="scan-outline"></ion-icon></span>
-                <!-- <span><ion-icon name="qr-code-outline"></ion-icon></span> -->
-                <span class="new-dot">
-                    <a href="settings.html"
-                        ><ion-icon name="settings-outline"></ion-icon
-                    ></a>
-                </span>
-            </div>
-        </header>
-
-        <main class="more-screen">
-            <div class="wallet">
-                <div class="wallet__column">
-                    <span>지갑</span
-                    ><ion-icon name="chevron-forward-outline"></ion-icon>
+        <div id="display-screen">
+            <div class="status-bar">
+                <div class="status-bar__column">
+                    <span>18:43</span>
                 </div>
-                <div class="wallet__column">
-                    <ion-icon name="shield-checkmark-outline"></ion-icon
-                    ><span>인증서</span>
+                <div class="status-bar__column"></div>
+                <div class="status-bar__column">
+                    <ion-icon id="cellular" name="cellular"></ion-icon>
+                    <ion-icon id="wifi" name="wifi"></ion-icon>
+                    <ion-icon
+                        id="battery-empty"
+                        name="battery-dead-outline"
+                    ></ion-icon>
+                    <span>100</span>
+                    <ion-icon id="bolt" name="flash"></ion-icon>
                 </div>
-                <div class="wallet__column">
-                    <div class="wallet__item">블라블라어쩌구저쩌구웅앵웅</div>
-                    <div class="wallet__item">
-                        <ion-icon name="chevron-forward-outline"></ion-icon>
+            </div>
+
+            <header class="screen-header">
+                <h1 class="screen-header__title">More</h1>
+                <div class="screen-header__icons">
+                    <span><ion-icon name="search-outline"></ion-icon></span>
+                    <span><ion-icon name="scan-outline"></ion-icon></span>
+                    <!-- <span><ion-icon name="qr-code-outline"></ion-icon></span> -->
+                    <span class="new-dot">
+                        <a href="settings.html"
+                            ><ion-icon name="settings-outline"></ion-icon
+                        ></a>
+                    </span>
+                </div>
+            </header>
+
+            <main class="more-screen">
+                <div class="wallet">
+                    <div class="wallet__column">
+                        <span>지갑</span
+                        ><ion-icon name="chevron-forward-outline"></ion-icon>
                     </div>
-                </div>
-                <div class="wallet__column">
-                    <ion-icon name="chatbubble-sharp"></ion-icon
-                    ><span>pay</span>
-                </div>
-                <div class="wallet__column">0원</div>
-                <div class="wallet__column">
-                    <span class="after-bar">송금</span
-                    ><span class="after-bar">결제</span
-                    ><span class="after-bar">자산</span>
-                </div>
-                <div class="wallet__column">
-                    <ion-icon name="cart-outline"></ion-icon
-                    ><span>구매내역</span>
-                </div>
-                <!-- <div class="wallet__row">
+                    <div class="wallet__column">
+                        <ion-icon name="shield-checkmark-outline"></ion-icon
+                        ><span>인증서</span>
+                    </div>
+                    <div class="wallet__column">
+                        <div class="wallet__item">
+                            💸 이번 주 돈 나갈 일정 보기
+                        </div>
+                        <div class="wallet__item">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="wallet__column">
+                        <ion-icon name="chatbubble-sharp"></ion-icon
+                        ><span>pay</span>
+                    </div>
+                    <div class="wallet__column">0원</div>
+                    <div class="wallet__column">
+                        <span class="after-bar">송금</span
+                        ><span class="after-bar">결제</span
+                        ><span class="after-bar">자산</span>
+                    </div>
+                    <div class="wallet__column">
+                        <ion-icon name="cart-outline"></ion-icon
+                        ><span>구매내역</span>
+                    </div>
+                    <!-- <div class="wallet__row">
                     <div class="wallet__column">
                         <span>지갑</span
                         ><ion-icon name="chevron-forward-outline"></ion-icon>
@@ -102,107 +105,108 @@
                         ><span>구매내역</span>
                     </div>
                 </div> -->
-            </div>
+                </div>
 
-            <div class="icon-rows">
-                <div class="icon-row">
-                    <div class="icon-row__icon">
-                        <ion-icon name="gift-outline"></ion-icon
-                        ><span>Gift</span>
+                <div class="icon-rows">
+                    <div class="icon-row">
+                        <div class="icon-row__icon">
+                            <ion-icon name="gift-outline"></ion-icon
+                            ><span>Gift</span>
+                        </div>
+                        <div class="icon-row__icon">
+                            <ion-icon name="storefront-outline"></ion-icon
+                            ><span>Shopping</span>
+                        </div>
+                        <div class="icon-row__icon">
+                            <ion-icon name="happy-outline"></ion-icon
+                            ><span>Emoticons</span>
+                        </div>
+                        <div class="icon-row__icon">
+                            <ion-icon name="restaurant-outline"></ion-icon
+                            ><span>Order</span>
+                        </div>
                     </div>
-                    <div class="icon-row__icon">
-                        <ion-icon name="storefront-outline"></ion-icon
-                        ><span>Shopping</span>
+                    <div class="icon-row">
+                        <div class="icon-row__icon">
+                            <ion-icon name="today-outline"></ion-icon
+                            ><span>Calendar</span>
+                        </div>
+                        <div class="icon-row__icon">
+                            <ion-icon name="at-outline"></ion-icon
+                            ><span>Email</span>
+                        </div>
+                        <div class="icon-row__icon">
+                            <ion-icon name="color-palette-outline"></ion-icon
+                            ><span>Theme</span>
+                        </div>
+                        <div class="icon-row__icon">
+                            <ion-icon name="calendar-outline"></ion-icon
+                            ><span>Game</span>
+                        </div>
                     </div>
-                    <div class="icon-row__icon">
-                        <ion-icon name="happy-outline"></ion-icon
-                        ><span>Emoticons</span>
-                    </div>
-                    <div class="icon-row__icon">
-                        <ion-icon name="restaurant-outline"></ion-icon
-                        ><span>Order</span>
+                    <div class="icon-row">
+                        <div class="icon-row__icon">
+                            <ion-icon name="map-outline"></ion-icon
+                            ><span>Map</span>
+                        </div>
+                        <div class="icon-row__icon">
+                            <ion-icon name="subway-outline"></ion-icon
+                            ><span>Subway</span>
+                        </div>
+                        <div class="icon-row__icon">
+                            <ion-icon name="folder-outline"></ion-icon
+                            ><span>File</span>
+                        </div>
+                        <div class="icon-row__icon">
+                            <ion-icon name="grid-outline"></ion-icon
+                            ><span>All</span>
+                        </div>
                     </div>
                 </div>
-                <div class="icon-row">
-                    <div class="icon-row__icon">
-                        <ion-icon name="today-outline"></ion-icon
-                        ><span>Calendar</span>
-                    </div>
-                    <div class="icon-row__icon">
-                        <ion-icon name="at-outline"></ion-icon
-                        ><span>Email</span>
-                    </div>
-                    <div class="icon-row__icon">
-                        <ion-icon name="color-palette-outline"></ion-icon
-                        ><span>Theme</span>
-                    </div>
-                    <div class="icon-row__icon">
-                        <ion-icon name="calendar-outline"></ion-icon
-                        ><span>Game</span>
-                    </div>
-                </div>
-                <div class="icon-row">
-                    <div class="icon-row__icon">
-                        <ion-icon name="map-outline"></ion-icon><span>Map</span>
-                    </div>
-                    <div class="icon-row__icon">
-                        <ion-icon name="subway-outline"></ion-icon
-                        ><span>Subway</span>
-                    </div>
-                    <div class="icon-row__icon">
-                        <ion-icon name="folder-outline"></ion-icon
-                        ><span>File</span>
-                    </div>
-                    <div class="icon-row__icon">
-                        <ion-icon name="grid-outline"></ion-icon
-                        ><span>All</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="weather">
-                <div class="weather__column">양평</div>
-                <div class="weather__column">
-                    <ion-icon name="sunny-outline"></ion-icon>
-                    <span>30&#8451;</span>
+                <div class="weather">
+                    <div class="weather__column">양평</div>
+                    <div class="weather__column">
+                        <ion-icon name="sunny-outline"></ion-icon>
+                        <span>30&#8451;</span>
+                    </div>
+                    <div class="weather__column">어제보다 3&#8451; 높아요</div>
+                    <div class="weather__column">
+                        미세먼지<span class="weather__color">좋음</span>
+                    </div>
+                    <div class="weather__column">
+                        <!-- <ion-icon name="navigate-outline"></ion-icon> -->
+                        <ion-icon name="locate-outline"></ion-icon>
+                    </div>
                 </div>
-                <div class="weather__column">어제보다 3&#8451; 높아요</div>
-                <div class="weather__column">
-                    미세먼지<span class="weather__color">좋음</span>
-                </div>
-                <div class="weather__column">
-                    <!-- <ion-icon name="navigate-outline"></ion-icon> -->
-                    <ion-icon name="locate-outline"></ion-icon>
-                </div>
-            </div>
-        </main>
+            </main>
 
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__btn">
-                    <a class="nav__link" href="friends.html">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__link" href="chats.html">
-                        <span class="nav__notification badge">1</span>
-                        <ion-icon name="chatbubble-outline"></ion-icon>
-                    </a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__link" href="open-chat.html"
-                        ><ion-icon name="chatbubbles-outline"></ion-icon
-                    ></a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__link" href="more.html">
-                        <ion-icon name="ellipsis-horizontal"></ion-icon>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__btn">
+                        <a class="nav__link" href="friends.html">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="nav__btn">
+                        <a class="nav__link" href="chats.html">
+                            <span class="nav__notification badge">1</span>
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="nav__btn">
+                        <a class="nav__link" href="open-chat.html"
+                            ><ion-icon name="chatbubbles-outline"></ion-icon
+                        ></a>
+                    </li>
+                    <li class="nav__btn">
+                        <a class="nav__link" href="more.html">
+                            <ion-icon name="ellipsis-horizontal"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <div id="no-mobile">
             <span>Your screen is too big 😥</span>
         </div>

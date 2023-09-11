@@ -7,53 +7,59 @@
         <title>kokoa</title>
     </head>
     <body>
-        <div class="status-bar">
-            <div class="status-bar__column">
-                <span>18:43</span>
+        <div id="display-screen">
+            <div class="status-bar">
+                <div class="status-bar__column">
+                    <span>18:43</span>
+                </div>
+                <div class="status-bar__column"></div>
+                <div class="status-bar__column">
+                    <ion-icon id="cellular" name="cellular"></ion-icon>
+                    <ion-icon id="wifi" name="wifi"></ion-icon>
+                    <ion-icon
+                        id="battery-empty"
+                        name="battery-dead-outline"
+                    ></ion-icon>
+                    <span>100</span>
+                    <ion-icon id="bolt" name="flash"></ion-icon>
+                </div>
             </div>
-            <div class="status-bar__column"></div>
-            <div class="status-bar__column">
-                <ion-icon id="cellular" name="cellular"></ion-icon>
-                <ion-icon id="wifi" name="wifi"></ion-icon>
-                <ion-icon
-                    id="battery-empty"
-                    name="battery-dead-outline"
-                ></ion-icon>
-                <span>100</span>
-                <ion-icon id="bolt" name="flash"></ion-icon>
-            </div>
-        </div>
-        <main>
-            <header class="welcome-header">
-                <span class="welcome-header__title">kokoa</span>
-                <!-- <p class="welcome-header__text">
+            <main>
+                <header class="welcome-header">
+                    <span class="welcome-header__title">kokoa</span>
+                    <!-- <p class="welcome-header__text">
                 If you have a Kokoa Account, log in with your email or phone
                 number.
             </p> -->
-            </header>
+                </header>
 
-            <form action="friends.html" method="get" id="login-form">
-                <input
-                    name="username"
-                    type="text"
-                    placeholder="Email or Phone number"
-                />
-                <input name="password" type="password" placeholder="Password" />
-                <div class="save-login">
-                    <label for="save-loginCheck">
-                        <input type="checkbox" id="save-loginCheck" />
-                        Save login</label
-                    >
-                </div>
-                <button type="submit">
-                    <span class="login-btn">Log In</span>
-                </button>
-                <div class="account-user">
-                    <a href="#" class="link-join">SignIn</a>
-                    <a href="#" class="link-user">Find ID/Password</a>
-                </div>
-            </form>
-        </main>
+                <form action="friends.html" method="get" id="login-form">
+                    <input
+                        name="username"
+                        type="text"
+                        placeholder="Email or Phone number"
+                    />
+                    <input
+                        name="password"
+                        type="password"
+                        placeholder="Password"
+                    />
+                    <div class="save-login">
+                        <label for="save-loginCheck">
+                            <input type="checkbox" id="save-loginCheck" />
+                            Save login</label
+                        >
+                    </div>
+                    <button type="submit">
+                        <span class="login-btn">Log In</span>
+                    </button>
+                    <div class="account-user">
+                        <a href="#" class="link-join">SignIn</a>
+                        <a href="#" class="link-user">Find ID/Password</a>
+                    </div>
+                </form>
+            </main>
+        </div>
 
         <div id="splash-screen">
             <!-- loading screen -->

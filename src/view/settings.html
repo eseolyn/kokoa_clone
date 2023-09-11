@@ -7,145 +7,158 @@
         <title>Settings - Cocoa Clone</title>
     </head>
     <body>
-        <div class="status-bar">
-            <div class="status-bar__column">
-                <span>18:43</span>
-            </div>
-            <div class="status-bar__column"></div>
-            <div class="status-bar__column">
-                <ion-icon id="cellular" name="cellular"></ion-icon>
-                <ion-icon id="wifi" name="wifi"></ion-icon>
-                <ion-icon
-                    id="battery-empty"
-                    name="battery-dead-outline"
-                ></ion-icon>
-                <span>100</span>
-                <ion-icon id="bolt" name="flash"></ion-icon>
-            </div>
-        </div>
-
-        <header class="alt-header">
-            <div class="alt-header__column">
-                <a href="more.html">
-                    <ion-icon name="chevron-back-outline"></ion-icon>
-                </a>
-            </div>
-            <div class="alt-header__column">
-                <span class="alt-header__title">Settings</span>
-            </div>
-            <div class="alt-header__column">
-                <span><ion-icon name="search-outline"></ion-icon></span>
-            </div>
-        </header>
-
-        <main class="main-screen">
-            <ul class="settings-list">
-                <div class="user-component user-component__big">
-                    <div class="user-component__column user-component__img">
-                        <img
-                            src="https://avatars.githubusercontent.com/u/97269267?v=4"
-                            class="user-component__avatar user-component__avatar--xl"
-                        />
-                    </div>
-                    <div class="user-component__column user-component__text">
-                        <h4 class="user-component__title">Eunseol</h4>
-                        <h6 class="user-component__subtitle">
-                            +82 10-1234-5678
-                        </h6>
-                    </div>
-                    <div class="user-component__column user-component__msg">
-                        프로필 관리
-                    </div>
+        <div id="display-screen">
+            <div class="status-bar">
+                <div class="status-bar__column">
+                    <span>18:43</span>
                 </div>
-                <li>
-                    <div class="settings__setting">
-                        <div class="settings__setting-column">
-                            <ion-icon name="key-outline"></ion-icon>
-                            <span class="settings__setting-title"
-                                >코코아계정</span
-                            >
-                        </div>
-                        <div class="settings__setting-column">
-                            <div>skopdt73@gmail.com</div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="settings__setting">
-                        <div class="settings__setting-column">
-                            <ion-icon name="notifications-outline"></ion-icon>
-                            <span class="settings__setting-title">알림</span>
-                        </div>
-                        <div class="settings__setting-column"></div>
-                    </div>
-                </li>
-                <li class="settings__setting">
-                    <div class="settings__setting-column">
-                        <ion-icon name="flask-outline"></ion-icon>
-                        <span class="settings__setting-title">실험실</span>
-                    </div>
-                    <div class="settings__setting-column"></div>
-                </li>
-                <li class="settings__setting">
-                    <div class="settings__setting-column">
-                        <ion-icon name="megaphone-outline"></ion-icon>
-                        <span class="settings__setting-title">공지사항</span>
-                        <div class="badge new-badge">N</div>
-                    </div>
-                    <div class="settings__setting-column"></div>
-                </li>
-                <li>
-                    <div class="settings__setting">
-                        <div class="settings__setting-column">
-                            <ion-icon name="help-circle-outline"></ion-icon>
-                            <span class="settings__setting-title"
-                                >고객센터</span
-                            >
-                        </div>
-                        <div class="settings__setting-column"></div>
-                    </div>
-                </li>
+                <div class="status-bar__column"></div>
+                <div class="status-bar__column">
+                    <ion-icon id="cellular" name="cellular"></ion-icon>
+                    <ion-icon id="wifi" name="wifi"></ion-icon>
+                    <ion-icon
+                        id="battery-empty"
+                        name="battery-dead-outline"
+                    ></ion-icon>
+                    <span>100</span>
+                    <ion-icon id="bolt" name="flash"></ion-icon>
+                </div>
+            </div>
 
-                <li>
-                    <div class="settings__setting">
+            <header class="alt-header">
+                <div class="alt-header__column">
+                    <a href="more.html">
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                    </a>
+                </div>
+                <div class="alt-header__column">
+                    <span class="alt-header__title">Settings</span>
+                </div>
+                <div class="alt-header__column">
+                    <span><ion-icon name="search-outline"></ion-icon></span>
+                </div>
+            </header>
+
+            <main class="main-screen">
+                <ul class="settings-list">
+                    <div class="user-component user-component__big">
+                        <div class="user-component__column user-component__img">
+                            <img
+                                src="https://avatars.githubusercontent.com/u/97269267?v=4"
+                                class="user-component__avatar user-component__avatar--xl"
+                            />
+                        </div>
+                        <div
+                            class="user-component__column user-component__text"
+                        >
+                            <h4 class="user-component__title">Eunseol</h4>
+                            <h6 class="user-component__subtitle">
+                                +82 10-1234-5678
+                            </h6>
+                        </div>
+                        <div class="user-component__column user-component__msg">
+                            프로필 관리
+                        </div>
+                    </div>
+                    <li>
+                        <div class="settings__setting">
+                            <div class="settings__setting-column">
+                                <ion-icon name="key-outline"></ion-icon>
+                                <span class="settings__setting-title"
+                                    >코코아계정</span
+                                >
+                            </div>
+                            <div class="settings__setting-column">
+                                <div>skopdt73@gmail.com</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="settings__setting">
+                            <div class="settings__setting-column">
+                                <ion-icon
+                                    name="notifications-outline"
+                                ></ion-icon>
+                                <span class="settings__setting-title"
+                                    >알림</span
+                                >
+                            </div>
+                            <div class="settings__setting-column"></div>
+                        </div>
+                    </li>
+                    <li class="settings__setting">
                         <div class="settings__setting-column">
+                            <ion-icon name="flask-outline"></ion-icon>
+                            <span class="settings__setting-title">실험실</span>
+                        </div>
+                        <div class="settings__setting-column"></div>
+                    </li>
+                    <li class="settings__setting">
+                        <div class="settings__setting-column">
+                            <ion-icon name="megaphone-outline"></ion-icon>
+                            <span class="settings__setting-title"
+                                >공지사항</span
+                            >
+                            <div class="badge new-badge">N</div>
+                        </div>
+                        <div class="settings__setting-column"></div>
+                    </li>
+                    <li>
+                        <div class="settings__setting">
+                            <div class="settings__setting-column">
+                                <ion-icon name="help-circle-outline"></ion-icon>
+                                <span class="settings__setting-title"
+                                    >고객센터</span
+                                >
+                            </div>
+                            <div class="settings__setting-column"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="settings__setting">
+                            <div class="settings__setting-column">
+                                <ion-icon
+                                    name="information-circle-outline"
+                                ></ion-icon>
+                                <span class="settings__setting-title"
+                                    >앱 관리</span
+                                >
+                            </div>
+                            <div class="settings__setting-column">10.3.2</div>
+                        </div>
+                    </li>
+                </ul>
+            </main>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__btn">
+                        <a class="nav__link" href="friends.html">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="nav__btn">
+                        <a class="nav__link" href="chats.html">
+                            <span class="nav__notification badge">1</span>
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="nav__btn">
+                        <a class="nav__link" href="find.html"
+                            ><ion-icon name="chatbubbles"></ion-icon
+                        ></a>
+                    </li>
+                    <li class="nav__btn">
+                        <a class="nav__link" href="more.html">
                             <ion-icon
-                                name="information-circle-outline"
+                                name="ellipsis-horizontal-outline"
                             ></ion-icon>
-                            <span class="settings__setting-title">앱 관리</span>
-                        </div>
-                        <div class="settings__setting-column">10.3.2</div>
-                    </div>
-                </li>
-            </ul>
-        </main>
-
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__btn">
-                    <a class="nav__link" href="friends.html">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__link" href="chats.html">
-                        <span class="nav__notification badge">1</span>
-                        <ion-icon name="chatbubble-outline"></ion-icon>
-                    </a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__link" href="find.html"
-                        ><ion-icon name="chatbubbles"></ion-icon
-                    ></a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__link" href="more.html">
-                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <div id="no-mobile">
             <span>Your screen is too big 😥</span>
         </div>

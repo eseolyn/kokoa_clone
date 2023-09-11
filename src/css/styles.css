@@ -36,7 +36,7 @@ body {
     height: 100vh;
 }
 
-.main-screen {
+.main-screen:not(.main-chat) {
     padding: 16px var(--horizontal-space) 60px;
 }
 

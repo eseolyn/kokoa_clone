@@ -6,6 +6,8 @@
     padding: 10px 40px;
     box-sizing: border-box;
     border-top: 1px solid rgba(121, 121, 121, 0.3);
+    min-width: 360px;
+    max-width: 680px;
 }
 
 .nav__list {
